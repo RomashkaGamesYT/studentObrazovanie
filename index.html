@@ -11,8 +11,8 @@
       margin: 0;
       font-family: 'Montserrat', sans-serif;
       line-height: 1.6;
-      color: #333;
-      background: #f0f4f8;
+      color: #ddd;
+      background-color: #121212; /* тёмная тема */
     }
 
     a {
@@ -22,18 +22,28 @@
 
     /* Шапка с закруглёнными углами */
     header {
-      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-      color: #fff;
+      background: #1f1f1f;
       padding: 20px 40px;
-      border-radius: 20px; /* закругление углов */
+      border-radius: 20px;
       max-width: 1200px;
-      margin: 20px auto; /* по центру */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin: 20px auto;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header h1 span {
+      display: inline-block;
+      font-size: 2.5rem;
     }
 
     nav {
@@ -43,6 +53,19 @@
     nav a {
       margin-right: 20px;
       font-weight: 600;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+    }
+
+    /* Градиентный текст для заголовков */
+    .gradient-text {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     /* Основной блок */
@@ -112,20 +135,22 @@
 
     /* Контакты */
     .contacts {
-      background-color: #fff;
+      background-color: #1f1f1f;
       padding: 40px 20px;
       border-radius: 15px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      color: #ccc;
     }
 
     .contacts h3 {
       margin-top: 0;
+      font-size: 1.8rem;
     }
 
     /* Футер */
     footer {
-      background-color: #222;
-      color: #ccc;
+      background-color: #1f1f1f;
+      color: #999;
       padding: 20px;
       text-align: center;
       font-size: 0.9rem;
@@ -140,17 +165,13 @@
       .hero h2 {
         font-size: 2rem;
       }
-
-      .about {
-        flex-direction: column;
-      }
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Образование — Волонтёрский проект</h1>
+  <h1><span>🎓</span>Образование — Волонтёрский проект</h1>
   <nav>
     <a href="#about">О проекте</a>
     <a href="#volunteer">Стать волонтёром</a>
@@ -159,42 +180,42 @@
 </header>
 
 <section class="hero" id="about">
-  <h2>Помогаем раскрыть потенциал каждого!</h2>
-  <p>Наш проект занимается предоставлением бесплатных образовательных ресурсов и поддержки для детей и подростков. Вместе мы можем сделать образование доступным для всех.</p>
-  <a href="#volunteer" class="btn">Стать волонтёром</a>
+  <h2 class="gradient-text">🌟 Помогаем раскрыть потенциал каждого!</h2>
+  <p>Наш проект занимается предоставлением бесплатных образовательных ресурсов и поддержки для детей и подростков. Вместе мы можем сделать образование доступным для всех. ✨</p>
+  <a href="#volunteer" class="btn">Стать волонтёром 🚀</a>
 </section>
 
 <section class="about" id="about">
   <div class="about-text">
-    <h3>О проекте</h3>
-    <p>Мы — команда активных волонтёров, которая организует бесплатные занятия, мастер-классы и предоставляет поддержку тем, кто в ней нуждается. Наши ценности — образование, равенство и развитие.</p>
-    <p>Присоединяйтесь к нам и помогайте менять жизнь к лучшему!</p>
+    <h3 class="gradient-text">📝 О проекте</h3>
+    <p>Мы — команда активных волонтёров, которая организует бесплатные занятия, мастер-классы и предоставляет поддержку тем, кто в ней нуждается. Наши ценности — образование, равенство и развитие. 💪</p>
+    <p>Присоединяйтесь к нам и помогайте менять жизнь к лучшему! 🌍</p>
   </div>
   <div class="about-img">
     <img src="https://images.unsplash.com/photo-1592916098576-3dbb6a814b2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Волонтёры обучают детей" />
   </div>
 </section>
 
-<section id="volunteer" style="background-color:#e7f0fa; padding:60px 20px;">
-  <h3 style="text-align:center; margin-bottom:30px;">Стать волонтёром</h3>
+<section id="volunteer" style="background-color:#2a2a2a; padding:60px 20px; border-radius:10px; color:#ccc;">
+  <h3 style="text-align:center; margin-bottom:30px;" class="gradient-text">🤝 Стать волонтёром</h3>
   <ul style="max-width:700px; margin:auto; list-style:none; padding:0;">
-    <li style="margin-bottom:15px;">— Помогайте в организации занятий и мероприятий</li>
-    <li style="margin-bottom:15px;">— Проведение мастер-классов и лекций</li>
-    <li style="margin-bottom:15px;">— Онлайн поддержка и консультации</li>
+    <li style="margin-bottom:15px;">🚀 Помогайте в организации занятий и мероприятий</li>
+    <li style="margin-bottom:15px;">🎓 Проведение мастер-классов и лекций</li>
+    <li style="margin-bottom:15px;">💻 Онлайн поддержка и консультации</li>
   </ul>
   <div style="text-align:center; margin-top:30px;">
-    <a href="#contacts" class="btn">Заполнить анкету</a>
+    <a href="#contacts" class="btn">Заполнить анкету 📝</a>
   </div>
 </section>
 
 <section class="contacts" id="contacts">
-  <h3>Контакты</h3>
+  <h3>📞 Контакты</h3>
   <p>Свяжитесь с нами:</p>
-  <p><strong>Email:</strong> studentobrazovanie@mail.ru</p>
+  <p><strong>Электронная почта:</strong> studentobrazovanie@mail.ru ✉️</p>
 </section>
 
 <footer>
-  &copy; 2024 Образование. Все права защищены.
+  &copy; 2024 Образование. Все права защищены. 🌐
 </footer>
 
 </body>
