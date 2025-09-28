@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Образование — Волонтёрский проект</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Общие стили */
+    body {
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #f0f4f8;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Шапка с закруглёнными углами */
+    header {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+      color: #fff;
+      padding: 20px 40px;
+      border-radius: 20px; /* закругление углов */
+      max-width: 1200px;
+      margin: 20px auto; /* по центру */
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      font-weight: 600;
+    }
+
+    /* Основной блок */
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Герой */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+    }
+
+    /* Кнопка */
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 30px;
+      background-color: #ff6f61;
+      color: #fff;
+      border-radius: 30px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ff3b2e;
+    }
+
+    /* О проекте */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-img {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-img img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+
+    /* Контакты */
+    .contacts {
+      background-color: #fff;
+      padding: 40px 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    .contacts h3 {
+      margin-top: 0;
+    }
+
+    /* Футер */
+    footer {
+      background-color: #222;
+      color: #ccc;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Адаптивность */
+    @media(max-width: 768px){
+      header h1 {
+        font-size: 1.5rem;
+      }
+
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .about {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Образование — Волонтёрский проект</h1>
+  <nav>
+    <a href="#about">О проекте</a>
+    <a href="#volunteer">Стать волонтёром</a>
+    <a href="#contacts">Контакты</a>
+  </nav>
+</header>
+
+<section class="hero" id="about">
+  <h2>Помогаем раскрыть потенциал каждого!</h2>
+  <p>Наш проект занимается предоставлением бесплатных образовательных ресурсов и поддержки для детей и подростков. Вместе мы можем сделать образование доступным для всех.</p>
+  <a href="#volunteer" class="btn">Стать волонтёром</a>
+</section>
+
+<section class="about" id="about">
+  <div class="about-text">
+    <h3>О проекте</h3>
+    <p>Мы — команда активных волонтёров, которая организует бесплатные занятия, мастер-классы и предоставляет поддержку тем, кто в ней нуждается. Наши ценности — образование, равенство и развитие.</p>
+    <p>Присоединяйтесь к нам и помогайте менять жизнь к лучшему!</p>
+  </div>
+  <div class="about-img">
+    <img src="https://images.unsplash.com/photo-1592916098576-3dbb6a814b2e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Волонтёры обучают детей" />
+  </div>
+</section>
+
+<section id="volunteer" style="background-color:#e7f0fa; padding:60px 20px;">
+  <h3 style="text-align:center; margin-bottom:30px;">Стать волонтёром</h3>
+  <ul style="max-width:700px; margin:auto; list-style:none; padding:0;">
+    <li style="margin-bottom:15px;">— Помогайте в организации занятий и мероприятий</li>
+    <li style="margin-bottom:15px;">— Проведение мастер-классов и лекций</li>
+    <li style="margin-bottom:15px;">— Онлайн поддержка и консультации</li>
+  </ul>
+  <div style="text-align:center; margin-top:30px;">
+    <a href="#contacts" class="btn">Заполнить анкету</a>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <h3>Контакты</h3>
+  <p>Свяжитесь с нами:</p>
+  <p><strong>Email:</strong> studentobrazovanie@mail.ru</p>
+</section>
+
+<footer>
+  &copy; 2024 Образование. Все права защищены.
+</footer>
+
+</body>
+</html>
